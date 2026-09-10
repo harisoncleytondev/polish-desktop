@@ -3,24 +3,31 @@
   "productName": "polish-desktop",
   "version": "0.1.0",
   "identifier": "tech.harisoncleyton.polish-desktop",
+
   "build": {
     "beforeDevCommand": "pnpm dev",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist"
   },
+
   "app": {
     "windows": [
       {
-        "title": "polish-desktop",
+        "title": "Polish | Aguardando seu texto..",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "resizable": false,
+        "maximizable": false,
+        "fullscreen": false,
+        "decorations": false
       }
     ],
     "security": {
       "csp": null
     }
   },
+
   "bundle": {
     "active": true,
     "targets": "all",
